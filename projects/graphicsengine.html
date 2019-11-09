@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Matthew Loveday - DX11 Graphics Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="projects.css" />
+		
+		<link rel="shortcut icon" href="../images/avatar.jpg" />
+		
+	</head>
+	<body class="is-preload" onload="updatehomelink()">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="../images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Matthew Loveday</h1>
+							<p>Software Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#Head" id="home-link"><span class="icon solid fa-home">Home</span></a></li>
+								<li><a href="#Header" id="title-link"><span class="icon solid fa-angle-double-up">Title</span></a></li>
+								<li><a href="#Description" id="description-link"><span class="icon solid fa-align-left">Project Description</span></a></li>
+								<li><a href="#Learnt" id="learnt-link"><span class="icon solid fa-graduation-cap">What I learnt</span></a></li>
+								<li><a href="#Media" id="media-link"><span class="icon solid fa-photo-video">Media</span></a></li>
+								<li><a href="#Links" id="link-link"><span class="icon solid fa-link">Links</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/matthew_loveday" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/MattLovedayDev/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MatthewLoveday" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mattloveday/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.youtube.com/c/MattLoveday" target="_blank" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="mailto:mattloveday99@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Project Header -->
+					<section id="Header" class="one dark cover" style="background-image: url(images/graphicsengine/header.png);">
+						<div class="container">
+							<header>
+								<h2>DirectX 11 Game Engine</h2>
+							</header>
+						</div>
+					</section>
+					
+				<!-- Project Description -->					
+				<section id="Description" class="two">
+					<div class="container">
+				
+						<header>
+							<h2>Description</h2>
+						</header>
+				
+						<p>This engine was created for a university module I took called Advanced Graphics, to support implementing a wide array of graphical techniques I developed an Entity Component
+						System based game engine. This allowed me to modularly build components which gradually add functionality to the prototype. The features of the engine include:</p>
+						
+						<ul>
+							<li>Full entity component system, with every bit of functionality divided into seperate components avoiding coupling.</li>
+							<li>Full Diffuse, Ambient and Specular lighting done in the pixel shader (phong shading)</li>
+							<li>Normal and Parallax Occlusion mapping.</li>
+							<li>Transparency and Blending.</li>
+							<li>Multipass rendering.</li>
+							<li>Shadow Mapping.</li>
+							<li>Everything loaded from a custom formatted .scene file allowing for instant reloadable entity and shader configurations.</li>
+						</ul>
+						
+						<div style="width: 80%; margin: auto;">
+							<div class='embed-container'>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/ALuH5QEpfSw?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- What I Learnt -->					
+				<section id="Learnt" class="two">
+					<div class="container">
+						<header>
+							<h2>What I learnt.</h2>
+						</header>
+
+						<p>Throughout this project I learnt a lot about 3D rendering techniques, ranging all the way from getting vertices rendered in normalized device coordinates to 
+						calculating tangents to perform parallax occlusion mapping doing all calculations in tangent space.</p>
+						
+						<img class="image fit" style="margin-bottom: 37px;" src="images/graphicsengine/4.png">
+						
+						<p>I also did a lot of research into game engine design and entity component systems, this helped me avoid a lot of the pitfalls such as tight coupling. Along with this I looked
+							at how commercial game engines serialize their levels and implemented my own implementation using XML which lets me easily define the entities within the game and what components to put in them.</p>
+						
+						<p>If I was to attempt this project again I would try and seperate the rendering and the engine logic even further, compiling the renderer to a dynamic link library which gets included into the core engine.
+						This ensures that when I expand it for the <a href="physicsengine.html">physics engine</a> I wouldn't have to interfere with the renderer and changes made to the renderer wouldn't break the physics engine and vice versa.</p>
+					</div>
+				</section>
+				
+				<!-- Media -->					
+				<section id="Media" class="two">
+					<div class="container">
+						<header>
+							<h2>Media</h2>
+						</header>
+
+						<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/1.png"/>
+								</article>
+	
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/2.png"/>
+								</article>
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/3.png"/>
+								</article>
+	
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/4.png"/>
+								</article>
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/5.png"/>
+								</article>
+
+								<article class="item">
+									<img class="image fit" src="images/graphicsengine/6.png"/>
+								</article>
+							</div>
+						</div>
+
+
+
+					</div>
+				</section>
+				
+				<!-- Links -->
+				<section id="Links" class="two">
+					<div class="container">
+						<header>
+						<h2>Links</h2>
+						</header>
+						
+						<a href="https://www.youtube.com/watch?v=ALuH5QEpfSw" target="blank_"><button style="font-size: 18px"><span class="fab fa-youtube"> </span>  Youtube Video</button></a>
+					</div>
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Matthew Loveday. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			
+			<script>
+			
+				function updatehomelink()
+				{
+					document.getElementById("home-link").href = "../index.html";
+				}
+			
+			</script>
+
+	</body>
+</html>

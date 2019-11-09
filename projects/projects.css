@@ -1,0 +1,35 @@
+
+
+#nav ul li #home-link:hover 
+{
+	background: rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+	color: #fff;
+}
+
+#nav ul li #home-link:hover span:before {
+    color: #e27689;
+}
+
+#Header header
+{
+	color: white;
+}
+
+.embed-container 
+{ 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed 
+{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}

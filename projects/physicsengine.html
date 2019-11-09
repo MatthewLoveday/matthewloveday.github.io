@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Matthew Loveday - Physics Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="projects.css" />
+		
+		<link rel="shortcut icon" href="../images/avatar.jpg" />
+		
+	</head>
+	<body class="is-preload" onload="updatehomelink()">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="../images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Matthew Loveday</h1>
+							<p>Software Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#Head" id="home-link"><span class="icon solid fa-home">Home</span></a></li>
+								<li><a href="#Header" id="title-link"><span class="icon solid fa-angle-double-up">Title</span></a></li>
+								<li><a href="#Description" id="description-link"><span class="icon solid fa-align-left">Project Description</span></a></li>
+								<li><a href="#Learnt" id="learnt-link"><span class="icon solid fa-graduation-cap">What I learnt</span></a></li>
+								<li><a href="#Media" id="media-link"><span class="icon solid fa-photo-video">Media</span></a></li>
+								<li><a href="#Links" id="link-link"><span class="icon solid fa-link">Links</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/matthew_loveday" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/MattLovedayDev/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MatthewLoveday" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mattloveday/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.youtube.com/c/MattLoveday" target="_blank" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="mailto:mattloveday99@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Project Header -->
+					<section id="Header" class="one dark cover" style="background-image: url(images/physicsengine/header.png);">
+						<div class="container">
+							<header>
+								<h2>DirectX 11 Rigidbody Game Engine</h2>
+							</header>
+						</div>
+					</section>
+					
+				<!-- Project Description -->					
+				<section id="Description" class="two">
+					<div class="container">
+				
+						<header>
+							<h2>Description</h2>
+						</header>
+				
+						<p>This project was completed for a university assignment which required us to create a physics engine from scratch in C++. The project took around 3 months to complete and in that time I produced a prototype which had:</p>
+						<ul>
+							<li>Full Particle physics simulation</li>
+							<li>Particle Physics Joints and Force Generators including Rods, Elastics, Springs and Gravity Generators.</li>
+							<li>Full Rigidbody physics simulation.</li>
+							<li>Rigidbody physics joints and force generators.</li>
+							<li>Broad and Narrow phase collision detection using Spacial Partioning.</li>
+						</ul>
+						
+						<div style="width: 80%; margin: auto;">
+							<div class='embed-container'>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/6ARRV30vrzc?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- What I Learnt -->					
+				<section id="Learnt" class="two">
+					<div class="container">
+						<header>
+							<h2>What I learnt.</h2>
+						</header>
+
+						<p>This project was built upon my graphics engine (<a href="graphicsengine.html">which can also be seen on my portfolio here</a>) and as a result of that the codebase for the engine grew substantially.
+						One of the major learning experiences was dealing with a growing codebase that started to have hundreds of classes, it's easy to code yourself into corners and I had to be very careful to avoid that</p>
+						
+						<img class="image fit" style="margin-bottom: 37px;" src="images/physicsengine/6.png">
+						
+						<p>I also naturally learnt about how to go about programming particle and rigidbody physics, and how to implement the necessary maths behind them. While I had some familiarity with coding accurate velocity
+						I was had never tried to implement 3D Rigidbody collision and it was the hardest part of the project to get right.</p>
+						
+						<p>If I was to do this project again I would focus sooner on refactoring the base engine to work with the physics maths libraries, I built my own maths libraries on top of existing ones in the engine and they weren't
+						full compatible. I made conversion functions but in the long run they just because unweildy and long winded to use. As the physics system is fairly related to the renderer (sharing linear algebra constructs) having completely seperate
+						data types was a mistake I wouldn't make again.</p>
+					</div>
+				</section>
+				
+				<!-- Media -->					
+				<section id="Media" class="two">
+					<div class="container">
+						<header>
+							<h2>Media</h2>
+						</header>
+
+						<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/physicsengine/1.png"/>
+								</article>
+	
+								<article class="item">
+									<img class="image fit" src="images/physicsengine/2.png"/>
+								</article>
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/physicsengine/3.png"/>
+								</article>
+	
+								<article class="item">
+									<img class="image fit" src="images/physicsengine/4.png"/>
+								</article>
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/physicsengine/5.png"/>
+								</article>
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</section>
+				
+				<!-- Links -->
+				<section id="Links" class="two">
+					<div class="container">
+						<header>
+						<h2>Links</h2>
+						</header>
+						
+						<a href="https://www.youtube.com/watch?v=6ARRV30vrzc" target="blank_"><button style="font-size: 18px"><span class="fab fa-youtube"> </span>  Youtube Video</button></a>
+					</div>
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Matthew Loveday. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			
+			<script>
+			
+				function updatehomelink()
+				{
+					document.getElementById("home-link").href = "../index.html";
+				}
+			
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Matthew Loveday - Voxel Sandbox Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="projects.css" />
+		
+		<link rel="shortcut icon" href="../images/avatar.jpg" />
+		
+	</head>
+	<body class="is-preload" onload="updatehomelink()">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="../images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Matthew Loveday</h1>
+							<p>Voxel Sandbox Engine</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#Head" id="home-link"><span class="icon solid fa-home">Home</span></a></li>
+								<li><a href="#Header" id="title-link"><span class="icon solid fa-angle-double-up">Title</span></a></li>
+								<li><a href="#Description" id="description-link"><span class="icon solid fa-align-left">Project Description</span></a></li>
+								<li><a href="#Learnt" id="learnt-link"><span class="icon solid fa-graduation-cap">What I learnt</span></a></li>
+								<li><a href="#Media" id="media-link"><span class="icon solid fa-photo-video">Media</span></a></li>
+								<li><a href="#Links" id="link-link"><span class="icon solid fa-link">Links</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/matthew_loveday" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/MattLovedayDev/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MatthewLoveday" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mattloveday/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.youtube.com/c/MattLoveday" target="_blank" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="mailto:mattloveday99@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Project Header -->
+					<section id="Header" class="one dark cover" style="background-image: url(images/voxelengine/header.png);">
+						<div class="container">
+							<header>
+								<h2>Voxel Sandbox Engine</h2>
+							</header>
+						</div>
+					</section>
+					
+				<!-- Project Description -->					
+				<section id="Description" class="two">
+					<div class="container">
+				
+						<header>
+							<h2>Description</h2>
+						</header>
+				
+						<p>
+						The voxel game engine was created as a passion project, my favourite genre of games is sandbox simply because of the limitless potential of user generated content.
+						My favourite games growing up were LittleBigPlanet and Minecraft, and thus I wanted to make a small scale engine specifically tailored to fit that genre of game and have the
+						necessary optimisations to make it run well.
+						</p>
+						
+						<div style="width: 80%; margin: auto;">
+							<div class='embed-container'>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/IWblb_0E0oU?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>							
+							</div>
+						</div>
+						
+						<p>
+						The engine is built around an entity component system but a much more lightweight one than seen in my <a href="graphicsengine.html">DirectX11 game engine</a>, this engine performs most of it's
+						optimisations by using extra system memory. For example one thing it does is keep a list of all renderable objects in a static array for rendering, to allow rapid object instantiation this array reserves
+						space for hundreds of objects up front and only allows usage of those addresses when they're needed.
+						</p>
+						
+						<img style="width: 70%; margin: auto;" class="fit image" src="images/voxelengine/architecture.png">
+						
+						<p>
+						The abstraction structure of the engine can be seen in the image above, with the public facing engine APIs sitting on top of Windows, SDL and OpenGL. The engine itself is seperated into
+						three libraries: Engine, Engine CORE and Engine Renderer. This maintains a healthy level of seperation, something I wanted to do in my previous game engine but couldn't refactor.
+						</p>
+					</div>
+				</section>
+				
+				<!-- What I Learnt -->					
+				<section id="Learnt" class="two">
+					<div class="container">
+						<header>
+							<h2>What I learnt.</h2>
+						</header>
+						
+						<p>In the design and specification phase of this project I did a lot of research into various existing game engines, specifically looking at ID Softwares engines where they make use of
+						dynamic link libraries to link the game into the engine rather than the other way around (giving the engine complete control). From the research I have expanded my knowledge of the field
+						substantially.</p>
+						
+						<p>Outside of research during implementation I learnt OpenGL and the GLSL shader language, I had experience with DirectX11 before this project but had never used OpenGL.</p>
+						
+					</div>
+				</section>
+				
+				<!-- Media -->					
+				<section id="Media" class="two">
+					<div class="container">
+						<header>
+							<h2>Media</h2>
+						</header>
+
+						<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/voxelengine/1.png"/>
+								</article>
+	
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/voxelengine/2.png"/>
+								</article>
+								
+
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<img class="image fit" src="images/voxelengine/3.png"/>
+								</article>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</section>
+				
+				<!-- Links -->
+				<section id="Links" class="two">
+					<div class="container">
+						<header>
+						<h2>Links</h2>
+						</header>
+
+						<div style="padding-bottom: 20px; display: block;"> 
+						<a href="https://youtu.be/IWblb_0E0oU" target="blank_"><button style="font-size: 18px"><span class="fab fa-youtube"> </span>  Youtube Video</button></a>
+						</div>
+					
+						
+					</div>
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Matthew Loveday. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			
+			<script>
+			
+				function updatehomelink()
+				{
+					document.getElementById("home-link").href = "../index.html";
+				}
+			
+			</script>
+
+	</body>
+</html>
